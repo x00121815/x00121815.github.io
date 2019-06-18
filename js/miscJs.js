@@ -1,5 +1,5 @@
 function rotateText() {
-  let rtText = ["an IT Student.", "an Undergraduate.", "a Team Player.", "a Quick Learner.", "a Designer.", "a Developer."];
+  let rtText = ["a Team Player.", "a Quick Learner.", "a Designer.", "a Developer."];
   let tt = $("#rotate").data("txt") || 0;
   $("#rotate").data("txt", tt == rtText.length - 1 ? 0 : tt + 1).text(rtText[tt]).fadeIn()
     .delay(900).fadeOut(300, rotateText);
